@@ -1,0 +1,46 @@
+html{
+    font-size: 100%;
+    background: transparent;
+}
+
+body{
+    line-height: 1.6;
+    background: #f7f7f7f7;
+	overflow-x: hidden;
+	color: #000;
+    letter-spacing: .01em;
+    transition: all 0.5s ;
+    box-sizing: border-box;
+
+    &:before{
+        content: "NEXT";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 10em;
+        color: transparent;
+        font-weight: 700;
+        -webkit-text-stroke: 1px #999;
+        opacity: .2;
+    }
+}
+
+img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+//横幅環境設定
+$width-base: 1200px;
+$width-main: 800px;
+$width-side:360px;
+
+//フォント環境設定
+$font-base: Sans-Serif;
+$font-sub: serif;
+
+//カラー環境設定
+$color-main: #ffff00;
+$color-sub: #fff;
+$color-font: #333;

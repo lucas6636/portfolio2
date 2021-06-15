@@ -1,0 +1,91 @@
+.about{
+
+    margin-top: 200px;
+
+    @include mq("sp"){
+    }
+
+    &__contents{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mq("sp"){
+            flex-direction: column;
+        }
+    }
+
+    &__info{
+        width: 50%;
+        margin: 0 auto;
+        padding: 0 30px;
+
+        @include mq("sp"){
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+    &__title{
+
+        padding-bottom: 20px;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 180px;
+            background: #333;
+            left: 0;
+            bottom: 0;
+
+            @include mq("sp"){
+                width: 0;
+            }
+        }
+        h2{
+            font-size: vw(42);
+            font-weight: bold;
+            transition: all .3s;
+
+            @include mq("sp"){
+                font-size: vw(80);
+            }
+
+        }
+    }
+
+    &__text{
+        margin-top: 50px;
+
+        @include mq("sp"){
+            margin-top: 20px;
+        }
+        p{
+            font-size: rem(15);
+            font-weight: bold;
+            line-height: 2.2em;
+
+            @include mq("sp"){
+                font-size:  rem(15);
+            }
+        }
+    }
+
+    &__img{
+        width: 50%;
+        height: 80vh;
+        background-image: url('../img/about.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @include mq("sp"){
+            margin-top: 50px;
+            width: 150%;
+            height: 40vh;
+        }
+    }
+}

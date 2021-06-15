@@ -1,0 +1,43 @@
+.footer{
+    margin-top: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__contents{
+        display: flex;
+        justify-content: space-between;
+
+        @include mq("sp"){
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+    }
+
+    &__small{
+
+        @include mq("sp"){
+            margin-top: 60px;
+        }
+        small{
+            font-size: rem(10);
+        }
+    }
+
+    &__menu{
+        display: flex;
+        @include mq("sp"){
+            flex-direction: column;
+        }
+
+        a{
+            font-size: rem(12);
+            margin-right: 20px;
+
+            @include mq("sp"){
+                font-size: rem(10);
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

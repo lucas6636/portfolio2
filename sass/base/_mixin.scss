@@ -1,0 +1,25 @@
+
+$breakpoints: (
+  "tab": "only screen and (max-width: 1023px)",
+  "sp": "only screen and (max-width: 767px)"
+);
+
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@include mq(tab) {/* tab-size */}
+@include mq(sp) {/* sp-size */}
+
+$baseFontSize: 16;
+  @function rem($pixels) {
+    @return $pixels / $baseFontSize * 1rem;
+  }
+
+$baseWidth : 1280;
+  @function vw($pixelsVw) {
+      @return $pixelsVw / $baseWidth * 100vw;
+  }

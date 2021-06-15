@@ -1,0 +1,60 @@
+.header{
+
+
+    &__contents{
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+    }
+
+    &__nav{
+        @include mq("sp"){
+            display: none;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            li{
+                margin-right: 10px;
+
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    display: block;
+                    position: relative;
+                    line-height: 3.5em;
+                    font-size: rem(14);
+                    font-weight: bold;
+                    padding: 0 20px;
+                    color: #333;
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        z-index: -1;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height:100%;
+                        background:#00c9e8;
+                        transition:all .5s;
+                        opacity: 0;
+                    }
+
+                    &:hover::after{
+                        width: 100%;
+                        opacity: 1;
+                    }
+
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
