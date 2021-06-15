@@ -1,18 +1,25 @@
 .career-page{
     position: relative;
 
-    &:before{
+    &::before{
+        position: absolute;
+        content: "";
+        background: #f7f7f7f7;
+        width: 70%;
+        height: 250vh;
+        z-index: -1;
+    }
+
+    &::after{
         content: "CAREER";
-        position: fixed;
-        top: 50%;
-        left: 90%;
-        transform: translate(-50%,-50%);
-        font-size: 6em;
-        color: transparent;
-        font-weight: 700;
-        opacity: .2;
-        color: #00c9e8;
+        font-size: rem(120);
+        font-weight: bold;
         writing-mode: vertical-lr;
+        position: absolute;
+        z-index: -1;
+        opacity: .1;
+        top: 0;
+        right: 0;
     }
 
     &__contents{
@@ -20,9 +27,6 @@
     }
 
     &__title{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         h1{
             font-size: rem(50);
             font-weight: bold;
@@ -39,15 +43,11 @@
 
     &__subtitle{
         h2{
-            font-size: rem(26);
+            font-size: rem(32);
             font-weight: bold;
-            span{
-                display: inline-block;
-            }
 
             @include mq("tab"){
-                text-align: center;
-                font-size: rem(27);
+                font-size: rem(28);
             }
 
             @include mq("sp"){
@@ -58,17 +58,12 @@
     }
 
     &__text{
-        margin-top: 50px;
-        width: 50%;
-
-        @include mq("tab"){
-            width: 100%;
-        }
+        margin-top: 20px;
 
         p{
-            font-size: rem(15);
+            font-size: rem(16);
             font-weight: bold;
-            line-height: 2.2em;
+            margin-bottom: 20px;
 
             @include mq("tab"){
                 font-size: rem(15);
@@ -134,8 +129,7 @@
     &__desc{
         margin-top: 20px;
         p{
-            font-size: rem(14);
-            line-height: 1.8em;
+            font-size: rem(11);
 
             @include mq("tab"){
                 line-height: 1.9em;

@@ -1,18 +1,25 @@
 .vision-page{
     position: relative;
-    
-    &:before{
+
+    &::before{
+        position: absolute;
+        content: "";
+        background: #f7f7f7f7;
+        width: 70%;
+        height: 170vh;
+        z-index: -1;
+    }
+
+    &::after{
         content: "VISION";
-        position: fixed;
-        top: 50%;
-        left: 90%;
-        transform: translate(-50%,-50%);
-        font-size: 6em;
-        color: transparent;
-        font-weight: 700;
-        opacity: .2;
-        color: #00c9e8;
+        font-size: rem(240);
+        font-weight: bold;
         writing-mode: vertical-lr;
+        position: absolute;
+        z-index: -1;
+        opacity: .1;
+        top: 0;
+        right: 0;
     }
 
     &__contents{
@@ -20,9 +27,6 @@
     }
 
     &__title{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         h1{
             font-size: rem(50);
             font-weight: bold;
@@ -40,15 +44,11 @@
     &__sub-title{
 
         h2{
-            font-size: rem(26);
+            font-size: rem(32);
             font-weight: bold;
-            span{
-                display: inline-block;
-            }
 
             @include mq("tab"){
-                text-align: center;
-                font-size: rem(27);
+                font-size: rem(28);
             }
 
             @include mq("sp"){
@@ -60,11 +60,11 @@
 
     &__read{
         margin: 50px auto 0 auto;
-        width: 90%;
+        padding: 0 150px;
 
         @include mq("tab"){
             margin: 70px auto 0 auto;
-            width: 85%;
+            padding: 0 100px 0 0;
         }
 
         @include mq("sp"){
@@ -73,17 +73,18 @@
         }
 
         p{
-            font-size: rem(15);
+            font-size: rem(16);
             font-weight: bold;
-            line-height: 2.2em;
+            margin-bottom: 20px;
 
             @include mq("tab"){
-                line-height: 2.4em;
+                font-size: rem(15);
             }
 
             @include mq("sp"){
                 font-size: rem(13);
-                line-height: 2.5em;
+                line-height: 2.3em;
+                text-align: center;
             }
         }
     }

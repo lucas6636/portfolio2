@@ -28,7 +28,6 @@
                     font-size: rem(14);
                     font-weight: bold;
                     padding: 0 20px;
-                    color: #333;
 
                     &::after{
                         content: '';
@@ -56,5 +55,15 @@
         }
     }
 
-
+    &__link{
+        margin-left: auto;
+        a{
+            transition: all .3s;
+            &:hover{
+                border: #e4007f;
+                color: #fff;
+                background: #e4007f;
+            }
+        }
+    }
 }

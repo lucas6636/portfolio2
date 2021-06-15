@@ -1,21 +1,26 @@
 .hero{
-    height: 620px;
+    height: 600px;
     position: relative;
 
     h1{
         position: absolute;
         transform: translate(-50%,-50%);
-        font-size: vw(180);
+        font-size: vw(210);
         font-weight: bold;
-        right: -5%;
-        top: 39%;
+        right: -10%;
+        top: 32%;
+        background-clip: text;
         text-align: center;
+        display: table-cell;
         vertical-align: middle;
-        color: #00c9e8;
+        color: transparent;
+        background-image: resolve('img/hero.jpg');
+        background-size: cover;
+        background-position: center;
         writing-mode: vertical-rl;
 
         @include mq("sp"){
-            right: -75px;
+            right: -90px;
         }
     }
 
@@ -37,7 +42,7 @@
         p{
             font-size: rem(18);
             font-weight: bold;
-            color: #333;
+            color: #000;
             transition: all.3s;
 
             @include mq("tab"){
@@ -53,9 +58,7 @@
     &__title{
         margin-bottom: 20px;
 
-
         h2{
-            color: #333;
             font-size: vw(50);
             font-weight: bold;
             span{

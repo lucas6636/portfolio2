@@ -1,48 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="X-UA-Compatible" content="IE=11">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/drawer.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-</head>
-
-<body class="drawer drawer--right">
-
-    <button type="button" class="drawer-toggle drawer-hamburger">
-        <span class="sr-only">toggle navigation</span>
-        <span class="drawer-hamburger-icon"></span>
-    </button>
-
-    <nav class="drawer-nav">
-        <ul class="drawer-menu">
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">VISION</a></li>
-            <li><a href="">BUSINESS</a></li>
-            <li><a href="">NEWS</a></li>
-            <li><a href="">CAREER</a></li>
-        </ul>
-    </nav>
-
-    <header class="header">
-        <div class="header__contents inner">
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">VISION</a></li>
-                    <li><a href="">BUSINESS</a></li>
-                    <li><a href="">NEWS</a></li>
-                    <li><a href="">CAREER</a></li>
-                </ul>
-            </nav><!-- /header__nav -->
-        </div><!-- /header__contents -->
-    </header><!-- /header -->
-
+<?php get_header() ;?>
     <main class="main">
 
         <div class="career-page">
@@ -53,13 +9,13 @@
                 </div><!-- /career-page__title -->
                 <div class="career-page__wrap">
                     <div class="career-page__subtitle">
-                        <h2><span>新たなるアクションを引き起こして</span><span>一緒に未来を創りませんか？</span></h2>
+                        <h2>新たなるアクションを引き起こして一緒に未来を創りませんか？</h2>
                     </div><!-- /career-page__subtitle -->
                     <div class="career-page__text">
                         <p>「『未来』を創る為に様々な価値観が必要である」。私たちの『未来』を創り上げるためこのミッションのもとに集まり、それぞれの価値観や個性を出し合いながら活動しています。私たちのこれから、そして社会の為。これらを貢献するための心から共鳴し、ともに実践する仲間を求めています。</p>
                     </div><!-- /career-page__text -->
                     <div class="career-page__items">
-                        <article class="career-page__item">
+                    <article class="career-page__item">
                             <a href="">
                                 <h3>制作ディレクター</h3>
                                 <div class="career-page__tag">
@@ -121,26 +77,4 @@
         </div><!-- /career-page -->
 
     </main><!-- /main -->
-
-    <footer class="footer">
-        <div class="footer__contents inner">
-            <div class="footer__small">
-                <small>© NEXT Inc. All rights reserved.</small>
-            </div><!-- /footer__small -->
-            <div class="footer__menu">
-                <a href="">プライバシーポリシー</a>
-                <a href="">情報セキュリティ方針</a>
-            </div><!-- /footer__menu -->
-        </div><!-- /footer__contents -->
-    </footer><!-- /footer -->
-
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/iscroll.js"></script>
-    <script src="./js/drawer.min.js"></script>
-    <script src="./js/anime.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/scrollMonitor.js"></script>
-    <script src="./js/script.js"></script>
-</body>
-
-</html>
+    <?php get_footer() ;?>

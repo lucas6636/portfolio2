@@ -3,6 +3,7 @@
     margin-top: 200px;
 
     @include mq("sp"){
+        margin-top: 0;
     }
 
     &__contents{
@@ -64,9 +65,10 @@
             margin-top: 20px;
         }
         p{
-            font-size: rem(15);
             font-weight: bold;
-            line-height: 2.2em;
+            line-height: 1.8em;
+            transition: all .3s;
+            font-size: rem(17);
 
             @include mq("sp"){
                 font-size:  rem(15);
@@ -77,14 +79,14 @@
     &__img{
         width: 50%;
         height: 80vh;
-        background-image: url('../img/about.jpg');
+        background-image: resolve('img/about.jpg');
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
 
         @include mq("sp"){
-            margin-top: 50px;
-            width: 150%;
+            margin-top: 20px;
+            width: 120%;
             height: 40vh;
         }
     }

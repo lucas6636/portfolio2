@@ -24,10 +24,9 @@
         writing-mode: vertical-lr;
         position: absolute;
         z-index: -1;
-        opacity: .3;
+        opacity: .1;
         top: 40%;
         right: 0;
-        color: #00c9e8;
 
         @include mq("tab"){
             font-size: vw(200);
@@ -74,10 +73,10 @@
         }
         p{
             width: 50%;
-            font-size: rem(15);
+            font-size: rem(17);
             font-weight: 700;
             padding: 0 70px;
-            line-height: 2.4em;
+            line-height: 2.1em;
             transition: all .3s;
 
             @include mq("tab"){
@@ -87,9 +86,8 @@
 
             @include mq("sp"){
                 width: 100%;
-                line-height: 2.2em;
                 margin-top: 30px;
-                font-size: rem(12);
+                font-size: rem(15);
                 padding: 0;
             }
         }
@@ -144,7 +142,7 @@
 
             &:hover{
                 color: #fff;
-                border: 1px #fff solid;
+                border: none;
             }
         }
     }
