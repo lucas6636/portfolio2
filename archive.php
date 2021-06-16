@@ -11,7 +11,6 @@
 
                     <?php if(have_posts()) :?>
                     <?php while(have_posts())  : the_post(); ?>
-
                         <article class="news-page__item">
                             <div class="news-page__info">
                                 <time date_time="<?php the_time('Y-m-d'); ?>"><?php the_time('Y年m月d日')?></time>
@@ -21,9 +20,8 @@
                                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                             </div><!-- /news-page__text -->
                         </article><!-- /news-page__item -->
-
-                        <?php endwhile; ?>
-                <?php endif; ?>
+                    <?php endwhile; ?>
+                    <?php endif; ?>
 
 
                     </div><!-- /news-page__items -->
