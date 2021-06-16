@@ -1,5 +1,7 @@
 <?php get_header() ;?>
 
+
+<!-- hero -->
 <div class="hero">
     <h1>NEXT</h1>
     <div class="hero__contents inner">
@@ -18,8 +20,10 @@
     </div><!-- /hero__contents -->
 </div><!-- /hero -->
 
+<!-- main -->
 <main class="main">
 
+    <!-- about -->
     <section class="about">
         <div class="about__contents inner">
             <div class="about__info">
@@ -35,6 +39,7 @@
         </div><!-- /about__contents -->
     </section><!-- /about -->
 
+    <!-- vision -->
     <section class="vision">
         <div class="vision__contents inner">
             <div class="vision__title">
@@ -65,6 +70,7 @@
         </div><!-- /vision__contents -->
     </section><!-- /vision -->
 
+    <!-- business -->
     <section class="business">
         <div class="business__contents inner">
             <div class="business__title">
@@ -93,6 +99,7 @@
         </div><!-- /business__contents -->
     </section><!-- /business -->
 
+    <!-- news -->
     <section class="news">
         <div class="news__contents inner">
             <div class="news__wrap">
@@ -102,10 +109,9 @@
             </div><!-- /news__wrap -->
             <div class="news__wrapper">
 
+            <!-- 投稿記事ループ -->
                 <?php if(have_posts()) :?>
                 <?php while(have_posts())  : the_post(); ?>
-
-
                 <article class="news__item" id="post-<?php the_ID(); ?>" <?php post_class('news__item'); ?>>
                     <a href="<?php the_permalink(); ?>">
                         <div class="news__img"><?php the_post_thumbnail('medium'); ?></div><!-- /news__img -->
@@ -120,8 +126,6 @@
                         </div><!-- /news__meta -->
                     </a>
                 </article><!-- /news__item -->
-
-
                 <?php endwhile; ?>
                 <?php endif; ?>
 
@@ -130,6 +134,7 @@
         </div><!-- /news__contents -->
     </section><!-- /news -->
 
+    <!-- career -->
     <section class="career">
         <div class="career__contents inner">
             <div class="career__wrap">
