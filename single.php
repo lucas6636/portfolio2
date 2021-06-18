@@ -3,7 +3,7 @@
 <main class="main">
 
         <div class="single">
-            <div class="single__contents inner">
+            <div class="single__contents inner inner-s">
                 <div class="single__title">
                     <h1><?php the_title(); ?></h1>
                     <div class="single__info">

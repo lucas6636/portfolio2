@@ -16,13 +16,11 @@
 <body class="drawer drawer--right" <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-    <!-- drawer.js　使用 -->
     <button type="button" class="drawer-toggle drawer-hamburger">
         <span class="sr-only">toggle navigation</span>
         <span class="drawer-hamburger-icon"></span>
     </button>
 
-    <!-- sp時にdrawer.js -->
     <nav class="drawer-nav">
         <ul class="drawer-menu">
         <?php
@@ -37,7 +35,8 @@
         </ul>
     </nav>
 
-    <!-- header -->
+
+
     <header class="header">
         <div class="header__contents inner">
             <nav class="header__nav">

@@ -2,7 +2,7 @@
     <main class="main">
 
         <div class="business-page">
-            <div class="business-page__contents inner">
+            <div class="business-page__contents inner inner-s">
                 <div class="business-page__title">
                     <h1><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">BUSINESS</span></span></h1>
                     <div class="border"></div><!-- /border -->

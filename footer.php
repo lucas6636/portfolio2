@@ -1,4 +1,3 @@
-<!-- footer -->
 <footer class="footer">
         <div class="footer__contents inner">
             <div class="footer__small">

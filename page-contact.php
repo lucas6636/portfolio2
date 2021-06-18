@@ -2,7 +2,7 @@
     <main class="main">
 
         <div class="contact-page">
-            <div class="contact-page__contents inner">
+            <div class="contact-page__contents inner inner-s">
                 <div class="contact-page__title">
                     <h1><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">CONTACT</span></span></h1>
                     <div class="border"></div><!-- /border -->

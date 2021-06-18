@@ -1,4 +1,5 @@
 <?php
+
 function add_files() {
   wp_deregister_script('jquery');
   wp_enqueue_style( 'drawer', get_template_directory_uri() . '/css/drawer.min.css' );
@@ -9,6 +10,7 @@ function add_files() {
   wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js' );
 }
 add_action('wp_enqueue_scripts', 'add_files');
+
 ?>
 
 <?php

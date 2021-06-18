@@ -3,7 +3,7 @@
 <main class="main">
 
         <div class="news-page">
-            <div class="news-page__contents inner">
+            <div class="news-page__contents inner inner-s">
                 <div class="news-page__title">
                     <h1><?php the_title(); ?></h1>
                 </div><!-- /news-page__title -->

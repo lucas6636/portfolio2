@@ -3,7 +3,7 @@
     <main class="main">
 
         <div class="company-page">
-            <div class="company-page__contents inner">
+            <div class="company-page__contents inner inner-s">
                 <div class="company-page__title">
                     <h1><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">COMPANY</span></span></h1>
                     <div class="border"></div><!-- /border -->
