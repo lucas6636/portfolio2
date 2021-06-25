@@ -14,7 +14,7 @@
                             <table class="company-page__table">
                                 <tr>
                                     <th>社名</th>
-                                    <td>サンプル株式会社</td>
+                                    <td>NEXT株式会社</td>
                                 </tr>
                                 <tr>
                                     <th>設立</th>
@@ -22,7 +22,7 @@
                                 </tr>
                                 <tr>
                                     <th>代表取締役</th>
-                                    <td>サンプル</td>
+                                    <td>田中太郎</td>
                                 </tr>
                                 <tr>
                                     <th>資本金</th>
