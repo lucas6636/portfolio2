@@ -4,7 +4,7 @@
         <div class="contact-page">
             <div class="contact-page__contents inner inner-s">
                 <div class="contact-page__title">
-                    <h1><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">CONTACT</span></span></h1>
+                    <h1><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger"><?php the_title(); ?></span></span></h1>
                     <div class="border"></div><!-- /border -->
                 </div><!-- /contact-page__title -->
                 <div class="contact-page__wrap">

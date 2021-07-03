@@ -4,7 +4,7 @@
         <div class="career-page">
             <div class="career-page__contents inner inner-s">
                 <div class="career-page__title">
-                    <h1><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">CAREER</span></span></h1>
+                    <h1><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger"><?php the_title(); ?></span></span></h1>
                     <div class="border"></div><!-- /border -->
                 </div><!-- /career-page__title -->
                 <div class="career-page__wrap">

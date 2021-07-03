@@ -4,7 +4,7 @@
         <div class="vision-page">
             <div class="vision-page__contents inner inner-s">
                 <div class="vision-page__title">
-                    <h1><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">VISION</span></span></h1>
+                    <h1><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger"><?php the_title(); ?></span></span></h1>
                     <div class="border"></div><!-- /border -->
                 </div><!-- /vision-page__title -->
                 <div class="vision-page__wrap">

@@ -4,7 +4,7 @@
         <div class="business-page">
             <div class="business-page__contents inner inner-s">
                 <div class="business-page__title">
-                    <h1><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">BUSINESS</span></span></h1>
+                    <h1><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger"><?php the_title(); ?></span></span></h1>
                     <div class="border"></div><!-- /border -->
                 </div><!-- /business-page__title -->
                 <div class="business-page__wrap">

@@ -5,7 +5,7 @@
         <div class="news-page">
             <div class="news-page__contents inner inner-s">
                 <div class="news-page__title">
-                    <h1><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">NEWS</span></span></h1>
+                    <h1><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger"><?php the_title(); ?></span></span></h1>
                     <div class="border"></div><!-- /border -->
                 </div><!-- /news-page__title -->
                 <div class="news-page__wrap">
