@@ -5,7 +5,7 @@
         <div class="single">
             <div class="single__contents inner inner-s">
                 <div class="single__title">
-                    <h1><?php the_title(); ?></h1>
+                    <h1><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger"><?php the_title(); ?></span></span></h1>
                     <div class="single__info">
                         <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d')?></time>
                         <?php the_category(); ?>
